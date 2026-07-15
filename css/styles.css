@@ -328,43 +328,9 @@ p { margin: 0 0 1em; }
 
 /* ---------- About ---------- */
 .about-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
-  gap: 56px;
-  align-items: start;
+  max-width: 72ch;
 }
 .about-body p { color: var(--c-text); font-size: 1.02rem; }
-.about-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  background: linear-gradient(160deg, var(--c-primary-dark) 0%, var(--c-primary) 100%);
-  color: #fff;
-  padding: 32px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-}
-.about-stats .stat {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: var(--radius-md);
-  padding: 18px 16px;
-}
-.about-stats .stat-num {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 6px;
-  line-height: 1;
-}
-.about-stats .stat-label {
-  display: block;
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.75);
-  letter-spacing: 0.02em;
-}
 
 /* ---------- Mission cards ---------- */
 .mission-grid {
@@ -610,14 +576,6 @@ p { margin: 0 0 1em; }
 .footer-brand {
   display: flex; gap: 14px; align-items: center;
 }
-.footer-mark {
-  width: 56px; height: 56px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 35%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid rgba(255, 255, 255, 0.12);
-}
 .footer-title {
   font-family: var(--font-serif);
   color: #fff;
@@ -633,8 +591,6 @@ p { margin: 0 0 1em; }
   margin: 2px 0 0;
 }
 .footer-meta p { margin: 0 0 8px; font-size: 0.92rem; }
-.footer-admin { color: rgba(255, 255, 255, 0.7); }
-.footer-admin strong { color: #fff; }
 .footer-copy {
   margin-top: 16px;
   color: rgba(255, 255, 255, 0.55);
@@ -674,7 +630,6 @@ html[dir="rtl"] .brand { flex-direction: row; }
     margin-inline: auto;
     max-width: 60ch;
   }
-  .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .scholarship-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
@@ -710,7 +665,6 @@ html[dir="rtl"] .brand { flex-direction: row; }
   .nav-list a::after { display: none; }
   .primary-nav { gap: 12px; position: relative; }
   .brand-tag { display: none; }
-  .about-stats { grid-template-columns: 1fr 1fr; padding: 24px; }
   .hero-eyebrow, .eyebrow { font-size: 0.72rem; }
 }
 

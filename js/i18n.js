@@ -25,11 +25,6 @@ window.I18N = {
     aboutP4: "He continued as a postdoctoral researcher in Prof. Holger Dobbek's group until January 2022, then joined Prof. Rolf Hilgenfeld's group at the University of Lübeck. His later work expanded into drug design, targeting coronavirus proteases.",
     aboutP5: "Throughout his career he published more than 30 articles in high-impact international journals, received the Young Investigator Award in 2020, and contributed to a patent. His scientific legacy continues to inspire young researchers through this initiative.",
 
-    statPapers: "Published articles",
-    statAward: "Young Investigator Award",
-    statCountries: "Countries of research",
-    statField: "Structural biology focus",
-
     missionEyebrow: "Our mission",
     missionTitle: "Empowering the Next Generation of Scientists",
     cardEduTitle: "Academic Excellence",
@@ -98,7 +93,6 @@ window.I18N = {
     formError: "Please complete all fields with a valid email.",
 
     footerSadaqah: "<em>May Allah accept this effort as Sadaqah Jariyah for his soul.</em>",
-    footerAdmin: "Administered in collaboration with <strong>Egypt Scholars Inc.</strong>",
     footerRights: "Mohamed Ibrahim Initiative. All rights reserved."
   },
 
@@ -127,11 +121,6 @@ window.I18N = {
     aboutP3: "في عام 2011 حصل على منحة إيراسموس موندوس لدراسة الماجستير في كيمياء البروتينات بجامعة لوند في السويد، وأنجز رسالته عام 2012 بجامعة برلين التقنية. ثم أتمّ درجة الدكتوراه بجامعة هومبولت ببرلين (2012–2016) متخصصًا في فهم وظيفة البروتينات الضوئية — ولا سيما النظام الضوئي الثاني (PSII) — باستخدام تقنيات متقدمة كليزر الإلكترون الحر بالأشعة السينية (XFEL).",
     aboutP4: "عقب حصوله على الدكتوراه، انضم إلى مجموعة البروفيسور هولغر دوبيك كباحث ما بعد الدكتوراه حتى يناير 2022، ثم انتقل إلى مجموعة البروفيسور رولف هيلغنفيلد بجامعة لوبيك. توسّعت أبحاثه لاحقًا لتشمل تصميم الأدوية، خاصة استهداف بروتياز فيروسات كورونا.",
     aboutP5: "نشر طوال مسيرته أكثر من ثلاثين بحثًا في دوريات دولية مرموقة، وحصل على جائزة الباحث الشاب عام 2020، وأسهم في براءة اختراع. ولا يزال إرثه العلمي يُلهم الباحثين الشباب من خلال هذه المبادرة.",
-
-    statPapers: "بحثٌ منشور",
-    statAward: "جائزة الباحث الشاب",
-    statCountries: "دول للبحث",
-    statField: "تخصص البيولوجيا التركيبية",
 
     missionEyebrow: "رؤيتنا",
     missionTitle: "تمكين الجيل القادم من العلماء",
@@ -201,7 +190,6 @@ window.I18N = {
     formError: "يرجى إكمال جميع الحقول وبريد إلكتروني صحيح.",
 
     footerSadaqah: "<em>تقبّل الله هذا العمل صدقةً جاريةً عن روحه.</em>",
-    footerAdmin: "تُدار بالتعاون مع <strong>Egypt Scholars Inc.</strong>",
     footerRights: "مبادرة محمد إبراهيم. جميع الحقوق محفوظة."
   }
 };
