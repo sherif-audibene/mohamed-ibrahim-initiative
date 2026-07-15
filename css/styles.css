@@ -234,13 +234,32 @@ p { margin: 0 0 1em; }
   font-style: italic;
   font-size: 1.15rem;
   color: var(--c-primary);
+  margin: 0 0 6px;
+}
+.hero-tagline {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--c-primary-dark);
   margin: 0 0 22px;
 }
-.hero-lead {
-  font-size: 1.1rem;
+.hero-verse {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  line-height: 1.75;
   color: var(--c-text);
-  max-width: 56ch;
+  border-inline-start: 3px solid var(--c-primary);
+  padding-inline-start: 16px;
   margin: 0 0 28px;
+  max-width: 56ch;
+}
+.hero-verse cite {
+  display: block;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--c-muted);
+  margin-top: 8px;
 }
 .hero-cta {
   display: flex; flex-wrap: wrap; gap: 12px;
@@ -332,35 +351,23 @@ p { margin: 0 0 1em; }
 }
 .about-body p { color: var(--c-text); font-size: 1.02rem; }
 
-/* ---------- Mission cards ---------- */
-.mission-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+/* ---------- Mission / vision prose ---------- */
+.mission-body {
+  max-width: 72ch;
 }
-.card {
-  background: var(--c-bg);
-  border: 1px solid var(--c-border);
-  border-radius: var(--radius-md);
-  padding: 32px 28px;
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+.mission-body p {
+  color: var(--c-text);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin: 0 0 20px;
 }
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--c-primary-soft);
-}
-.card-icon {
-  width: 52px; height: 52px;
-  border-radius: 14px;
-  background: var(--c-primary-soft);
+.mission-body .mission-prayer {
   color: var(--c-primary);
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 20px;
+  border-inline-start: 3px solid var(--c-primary-soft);
+  padding-inline-start: 16px;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
-.card-icon svg { width: 26px; height: 26px; }
-.card h3 { font-size: 1.2rem; margin: 0 0 10px; }
-.card p { color: var(--c-muted); margin: 0; }
 
 /* ---------- Scholarship panels ---------- */
 .scholarship-grid {

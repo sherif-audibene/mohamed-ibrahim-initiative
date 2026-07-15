@@ -27,7 +27,7 @@
 
     const titles = {
       en: 'Mohamed Ibrahim Initiative — Advancing Young Scientists',
-      ar: 'مبادرة محمد إبراهيم — نهضةٌ بالعلماء الشباب'
+      ar: 'مبادرة محمد إبراهيم — لدعم الجيل القادم من العلماء'
     };
     document.title = titles[lang];
 
@@ -113,7 +113,7 @@
       }
 
       const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-      const mailto = `mailto:Info@Mohamedibrahiminitiative.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailto = `mailto:info@mohamedibrahimscholarship.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailto;
 
       feedback.textContent = dict.formSuccess;
