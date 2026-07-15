@@ -94,26 +94,10 @@ p { margin: 0 0 1em; }
   color: var(--c-primary-dark);
 }
 .brand:hover { color: var(--c-primary); }
-.brand-mark {
-  width: 44px; height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 35%;
-  background: var(--c-primary-soft);
-  border: 1.5px solid var(--c-primary-soft);
-}
-.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
-.brand-title {
-  font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--c-primary-dark);
-}
-.brand-tag {
-  font-size: 0.74rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--c-muted);
+.brand-logo {
+  height: 52px;
+  width: auto;
+  display: block;
 }
 
 .primary-nav { display: flex; align-items: center; gap: 24px; }

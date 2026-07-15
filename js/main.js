@@ -25,6 +25,10 @@
       }
     });
 
+    document.querySelectorAll('[data-logo]').forEach(img => {
+      img.src = 'assets/logo-' + lang + '.png';
+    });
+
     const titles = {
       en: 'Mohamed Ibrahim Initiative — Advancing Young Scientists',
       ar: 'مبادرة محمد إبراهيم — لدعم الجيل القادم من العلماء'

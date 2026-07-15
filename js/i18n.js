@@ -11,7 +11,6 @@ window.I18N = {
     navContact: "Contact",
 
     heroEyebrow: "In loving memory",
-    heroMotto: "From One Legacy to Another",
     heroTagline: "Advancing Young Scientists",
     heroVerse: "&ldquo;Indeed, it is We who bring the dead to life and record what they have sent ahead and the traces they leave behind.&rdquo;<cite>Qur'an, Ya-Sin 36:12</cite>",
     heroCtaApply: "Scholarship Program",
@@ -99,7 +98,6 @@ window.I18N = {
     navContact: "تواصل",
 
     heroEyebrow: "في ذكرى عطرة",
-    heroMotto: "من أثرٍ إلى أثر",
     heroTagline: "لدعم الجيل القادم من العلماء",
     heroVerse: "﴿إِنَّا نَحْنُ نُحْيِي الْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا وَآثَارَهُمْ﴾<cite>سورة يس: 12</cite>",
     heroCtaApply: "برنامج المنحة",
