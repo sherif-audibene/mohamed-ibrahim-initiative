@@ -229,6 +229,13 @@ p { margin: 0 0 1em; }
   margin: 0 0 22px;
   font-weight: 500;
 }
+.hero-motto {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--c-primary);
+  margin: 0 0 22px;
+}
 .hero-lead {
   font-size: 1.1rem;
   color: var(--c-text);
@@ -496,10 +503,11 @@ p { margin: 0 0 1em; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--c-accent);
-  margin: 0 0 12px;
+  margin: 0 0 6px;
   font-weight: 600;
 }
-.awardee-bio { color: var(--c-muted); font-size: 0.94rem; margin: 0; }
+.awardee-affil { color: var(--c-muted); font-size: 0.85rem; margin: 0 0 12px; font-style: italic; }
+.awardee-bio { color: var(--c-muted); font-size: 0.94rem; margin: 0; text-align: start; }
 
 /* ---------- Contact ---------- */
 .contact-grid {
