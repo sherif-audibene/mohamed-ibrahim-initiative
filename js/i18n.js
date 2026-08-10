@@ -40,7 +40,6 @@ window.I18N = {
     eligibility2: "Be pursuing studies in STEM fields (Science, Technology, Engineering, and Mathematics)",
     eligibility3: "Demonstrate outstanding academic excellence",
     eligibility4: "Show strong commitment to research and postgraduate education",
-    eligibility5: "Demonstrate financial need",
     selectionTitle: "Selection Process",
     selectionIntro: "Applications are reviewed independently in collaboration with <strong>Egypt Scholars Inc.</strong> based on:",
     selection1: "Academic merit",
@@ -49,7 +48,7 @@ window.I18N = {
     selection4: "Financial need",
     selectionNote: "The family of Dr. Mohamed Ibrahim does not interfere in the selection process to ensure fairness and transparency.",
     adminTitle: "Administration",
-    adminBody: "The Mohamed Ibrahim Scholarship Initiative is supported by the family of Dr. Mohamed Ibrahim and administered in collaboration with <strong>Egypt Scholars Inc.</strong>",
+    adminBody: "The Mohamed Ibrahim Scholarship Initiative (Mohamed Ibrahim Academic Excellence Scholarship) is supported by the family of Dr. Mohamed Ibrahim and administered in collaboration with <strong>Egypt Scholars Inc.</strong>",
     adminFuture: "Future scholarship programs, research travel opportunities, and academic initiatives may be added under the initiative in the coming years.",
 
     awardeesEyebrow: "Recognition",
@@ -127,7 +126,6 @@ window.I18N = {
     eligibility2: "أن يدرس في تخصصات STEM (العلوم والتكنولوجيا والهندسة والرياضيات)",
     eligibility3: "أن يُثبت تفوقًا أكاديميًا متميزًا",
     eligibility4: "أن يُبدي التزامًا قويًا بالبحث والدراسات العليا",
-    eligibility5: "أن يكون محتاجًا ماليًا",
     selectionTitle: "عملية الاختيار",
     selectionIntro: "تُراجَع الطلبات باستقلالية بالتعاون مع <strong>Egypt Scholars Inc.</strong> وفق:",
     selection1: "الجدارة الأكاديمية",
@@ -136,7 +134,7 @@ window.I18N = {
     selection4: "الحاجة المالية",
     selectionNote: "لا تتدخل عائلة الدكتور محمد إبراهيم في عملية الاختيار، حرصًا على النزاهة والشفافية.",
     adminTitle: "الإدارة",
-    adminBody: "تدعم المبادرةَ عائلةُ الدكتور محمد إبراهيم، وتُدار بالتعاون مع <strong>Egypt Scholars Inc.</strong>",
+    adminBody: "تدعم مبادرةَ منحة محمد إبراهيم (منحة محمد إبراهيم للتميّز الأكاديمي) عائلةُ الدكتور محمد إبراهيم، وتُدار بالتعاون مع <strong>Egypt Scholars Inc.</strong>",
     adminFuture: "قد تُضاف برامج منحٍ أخرى وفرص سفر بحثي ومبادرات أكاديمية في السنوات القادمة.",
 
     awardeesEyebrow: "تقدير",

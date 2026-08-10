@@ -331,11 +331,40 @@ p { margin: 0 0 1em; }
 
 /* ---------- About ---------- */
 .about-grid {
-  max-width: 72ch;
+  display: grid;
+  grid-template-columns: minmax(0, 72ch) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+.about-figure {
+  margin: 0;
+}
+.about-figure img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--c-border);
+  display: block;
 }
 .about-body p { color: var(--c-text); font-size: 1.02rem; }
 
 /* ---------- Mission / vision prose ---------- */
+.mission-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 72ch) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+.mission-figure {
+  margin: 0;
+  position: sticky;
+  top: 100px;
+}
+.mission-figure img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--c-border);
+  display: block;
+}
 .mission-body {
   max-width: 72ch;
 }
@@ -621,6 +650,10 @@ html[dir="rtl"] .brand { flex-direction: row; }
     margin-inline: auto;
     max-width: 60ch;
   }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-figure { max-width: 420px; margin-inline: auto; }
+  .mission-grid { grid-template-columns: 1fr; }
+  .mission-figure { position: static; max-width: 480px; margin-inline: auto; }
   .scholarship-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
