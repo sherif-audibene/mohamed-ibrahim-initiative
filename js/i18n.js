@@ -80,6 +80,9 @@ window.I18N = {
     formSuccess: "Thank you — your message has been sent. We will be in touch.",
     formError: "Please complete all fields with a valid email.",
     formSending: "Sending…",
+    copyEmail: "Copy email",
+    copyDone: "Copied!",
+    copyFailed: "Copy failed",
     formFailed: "Sorry, the message could not be sent. Please email us directly at info@mohamedibrahiminitative.org.",
 
     footerSadaqah: "<em>May Allah accept this effort as Sadaqah Jariyah for his soul.</em>",
@@ -167,6 +170,9 @@ window.I18N = {
     formSuccess: "شكرًا لتواصلكم — تم إرسال رسالتكم وسنعاود التواصل معكم.",
     formError: "يرجى إكمال جميع الحقول وبريد إلكتروني صحيح.",
     formSending: "جارٍ الإرسال…",
+    copyEmail: "نسخ البريد",
+    copyDone: "تم النسخ!",
+    copyFailed: "فشل النسخ",
     formFailed: "تعذّر إرسال الرسالة. يُرجى مراسلتنا مباشرةً على info@mohamedibrahiminitative.org.",
 
     footerSadaqah: "<em>تقبّل الله هذا العمل صدقةً جاريةً عن روحه.</em>",

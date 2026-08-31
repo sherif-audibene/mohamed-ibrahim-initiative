@@ -141,6 +141,37 @@
     });
   }
 
+  function initCopyEmail() {
+    const btn = document.getElementById('copy-email');
+    if (!btn) return;
+    const label = btn.querySelector('span');
+
+    btn.addEventListener('click', async () => {
+      const text = btn.dataset.copy;
+      const dict = window.I18N[document.documentElement.lang] || window.I18N.en;
+      try {
+        // ponytail: execCommand fallback because clipboard API needs a secure context.
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+        }
+        label.textContent = dict.copyDone;
+      } catch (err) {
+        label.textContent = dict.copyFailed;
+      }
+      setTimeout(() => { label.textContent = dict.copyEmail; }, 2000);
+    });
+  }
+
   function initYear() {
     const el = document.getElementById('year');
     if (el) el.textContent = new Date().getFullYear();
@@ -152,6 +183,7 @@
     initNavToggle();
     initReveal();
     initForm();
+    initCopyEmail();
     initYear();
   });
 })();
