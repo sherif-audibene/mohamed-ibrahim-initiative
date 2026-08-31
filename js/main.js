@@ -122,7 +122,7 @@
       feedback.className = 'form-feedback';
 
       // ponytail: FormSubmit relays to info@ — no backend needed on a static host.
-      fetch('https://formsubmit.co/ajax/info@mohamedibrahiminitative.org', {
+      fetch('https://formsubmit.co/ajax/info@mohamedibrahiminitiative.org', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({ name, email, _subject: subject, message, _captcha: 'false' })

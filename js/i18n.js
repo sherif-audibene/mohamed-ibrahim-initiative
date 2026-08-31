@@ -80,7 +80,7 @@ window.I18N = {
     formSuccess: "Thank you — your message has been sent. We will be in touch.",
     formError: "Please complete all fields with a valid email.",
     formSending: "Sending…",
-    formFailed: "Sorry, the message could not be sent. Please email us directly at info@mohamedibrahiminitative.org.",
+    formFailed: "Sorry, the message could not be sent. Please email us directly at info@mohamedibrahiminitiative.org.",
 
     footerSadaqah: "<em>May Allah accept this effort as Sadaqah Jariyah for his soul.</em>",
     footerRights: "Mohamed Ibrahim Initiative. All rights reserved."
@@ -167,7 +167,7 @@ window.I18N = {
     formSuccess: "شكرًا لتواصلكم — تم إرسال رسالتكم وسنعاود التواصل معكم.",
     formError: "يرجى إكمال جميع الحقول وبريد إلكتروني صحيح.",
     formSending: "جارٍ الإرسال…",
-    formFailed: "تعذّر إرسال الرسالة. يُرجى مراسلتنا مباشرةً على info@mohamedibrahiminitative.org.",
+    formFailed: "تعذّر إرسال الرسالة. يُرجى مراسلتنا مباشرةً على info@mohamedibrahiminitiative.org.",
 
     footerSadaqah: "<em>تقبّل الله هذا العمل صدقةً جاريةً عن روحه.</em>",
     footerRights: "مبادرة محمد إبراهيم. جميع الحقوق محفوظة."
