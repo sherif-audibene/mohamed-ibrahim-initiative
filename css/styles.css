@@ -49,6 +49,7 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--c-primary); text-decoration: none; transition: color var(--transition); }
 a:hover { color: var(--c-accent); }
+.panel a { text-decoration: underline; text-underline-offset: 2px; }
 button { font-family: inherit; cursor: pointer; }
 
 h1, h2, h3, h4 {
