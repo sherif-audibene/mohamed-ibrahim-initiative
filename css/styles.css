@@ -503,19 +503,6 @@ p { margin: 0 0 1em; }
   gap: 32px;
   align-items: start;
 }
-.contact-card-value { color: #fff; word-break: break-all; }
-.contact-card-value:hover { color: #fff; text-decoration: underline; }
-.copy-btn {
-  margin-top: 14px; align-self: flex-start;
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 8px 14px; border-radius: 999px;
-  font: inherit; font-size: 0.85rem; cursor: pointer;
-  color: #fff; background: rgba(255,255,255,0.14);
-  border: 1px solid rgba(255,255,255,0.35);
-  transition: background var(--transition);
-}
-.copy-btn:hover { background: rgba(255,255,255,0.26); }
-.copy-btn svg { width: 16px; height: 16px; }
 .contact-card {
   background: linear-gradient(160deg, var(--c-primary-dark) 0%, var(--c-primary) 100%);
   color: #fff;
@@ -549,6 +536,9 @@ p { margin: 0 0 1em; }
   font-size: 1.05rem;
   font-weight: 500;
   word-break: break-all;
+  user-select: all;
+  -webkit-user-select: all;
+  cursor: text;
 }
 
 .contact-form {
