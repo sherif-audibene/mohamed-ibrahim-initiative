@@ -116,13 +116,28 @@
         return;
       }
 
-      const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-      const mailto = `mailto:info@mohamedibrahimscholarship.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailto;
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      feedback.textContent = dict.formSending;
+      feedback.className = 'form-feedback';
 
-      feedback.textContent = dict.formSuccess;
-      feedback.className = 'form-feedback success';
-      form.reset();
+      // ponytail: FormSubmit relays to info@ — no backend needed on a static host.
+      fetch('https://formsubmit.co/ajax/info@mohamedibrahiminitative.org', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ name, email, _subject: subject, message, _captcha: 'false' })
+      })
+        .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(() => {
+          feedback.textContent = dict.formSuccess;
+          feedback.className = 'form-feedback success';
+          form.reset();
+        })
+        .catch(() => {
+          feedback.textContent = dict.formFailed;
+          feedback.className = 'form-feedback error';
+        })
+        .finally(() => { btn.disabled = false; });
     });
   }
 
