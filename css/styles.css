@@ -71,11 +71,11 @@ p { margin: 0 0 1em; }
 }
 
 .skip-link {
-  position: absolute; left: -9999px; top: 0;
+  position: absolute; inset-inline-start: -9999px; top: 0;
   background: var(--c-primary); color: #fff;
   padding: 10px 16px; z-index: 100;
 }
-.skip-link:focus { left: 12px; top: 12px; }
+.skip-link:focus { inset-inline-start: 12px; top: 12px; }
 
 /* ---------- Header ---------- */
 .site-header {
