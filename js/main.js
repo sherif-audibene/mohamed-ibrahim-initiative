@@ -149,7 +149,9 @@
     // unique-visitor total (`count_unique` is a deprecated alias). Read-only — the
     // async count.js tag does the recording, this call never inflates the number.
     // 403s until "allow using the visitor counter" is on in the site settings.
-    fetch('https://mohamedibrahiminitiative.goatcounter.com/counter/TOTAL.json')
+    // start= is REQUIRED: with no date range the endpoint answers 0, not the total.
+    // Any pre-launch date gives the all-time figure (site started 2026-05-15).
+    fetch('https://mohamedibrahiminitiative.goatcounter.com/counter/TOTAL.json?start=2020-01-01')
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(d => {
         // ponytail: hide at zero — "0 visitors" on a live site reads as broken.
