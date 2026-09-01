@@ -152,7 +152,8 @@
     fetch('https://mohamedibrahiminitiative.goatcounter.com/counter/TOTAL.json')
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(d => {
-        if (d && d.count) {
+        // ponytail: hide at zero — "0 visitors" on a live site reads as broken.
+        if (d && d.count && d.count !== '0') {
           count.textContent = d.count; // already thousands-separated
           el.hidden = false;
         }
