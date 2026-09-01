@@ -83,7 +83,8 @@ window.I18N = {
     formFailed: "Sorry, the message could not be sent. Please email us directly at info@mohamedibrahiminitiative.org.",
 
     footerSadaqah: "<em>May Allah accept this effort as Sadaqah Jariyah for his soul.</em>",
-    footerRights: "Mohamed Ibrahim Initiative. All rights reserved."
+    footerRights: "Mohamed Ibrahim Initiative. All rights reserved.",
+    footerVisits: "visitors"
   },
 
   ar: {
@@ -170,6 +171,7 @@ window.I18N = {
     formFailed: "تعذّر إرسال الرسالة. يُرجى مراسلتنا مباشرةً على info@mohamedibrahiminitiative.org.",
 
     footerSadaqah: "<em>تقبّل الله هذا العمل صدقةً جاريةً عن روحه.</em>",
-    footerRights: "مبادرة محمد إبراهيم. جميع الحقوق محفوظة."
+    footerRights: "مبادرة محمد إبراهيم. جميع الحقوق محفوظة.",
+    footerVisits: "زائر"
   }
 };

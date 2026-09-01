@@ -620,6 +620,14 @@ p { margin: 0 0 1em; }
   color: rgba(255, 255, 255, 0.55);
   font-size: 0.85rem;
 }
+.footer-visits {
+  margin-top: 6px;
+  opacity: 0.8;
+}
+.footer-visits #visit-count {
+  font-variant-numeric: tabular-nums;
+  color: rgba(255, 255, 255, 0.8);
+}
 
 /* ---------- RTL adjustments ---------- */
 html[dir="rtl"] .nav-list a::after { transform-origin: right; }

@@ -141,6 +141,22 @@
     });
   }
 
+  function initCounter() {
+    const el = document.getElementById('visit-counter');
+    const count = document.getElementById('visit-count');
+    if (!el || !count) return;
+    // ponytail: counterapi is a public, unauthenticated vanity badge — decoration only.
+    fetch('https://counterapi.com/api/mohamedibrahiminitiative/up/visits?unique=true')
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(d => {
+        if (d && d.formatted) {
+          count.textContent = d.formatted;
+          el.hidden = false;
+        }
+      })
+      .catch(() => {}); // stay hidden if the service is down
+  }
+
   function initYear() {
     const el = document.getElementById('year');
     if (el) el.textContent = new Date().getFullYear();
@@ -153,5 +169,6 @@
     initReveal();
     initForm();
     initYear();
+    initCounter();
   });
 })();
