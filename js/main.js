@@ -150,8 +150,14 @@
     // async count.js tag does the recording, this call never inflates the number.
     // 403s until "allow using the visitor counter" is on in the site settings.
     // start= is REQUIRED: with no date range the endpoint answers 0, not the total.
-    // Any pre-launch date gives the all-time figure (site started 2026-05-15).
-    fetch('https://mohamedibrahiminitiative.goatcounter.com/counter/TOTAL.json?start=2020-01-01')
+    // GoatCounter caches this response ~4h, keyed on start= and ignoring unknown
+    // params, so one fixed date pins a stale number. Every date before launch
+    // (2026-05-15) returns the same all-time total, so rotate hourly through 90 of
+    // them to bound staleness at ~1h. ponytail: ceiling is 1h; drop the rotation
+    // and accept a 4h lag if this ever looks like hammering their cache.
+    const bucket = Math.floor(Date.now() / 3600e3) % 90;
+    const start = new Date(Date.UTC(2020, 0, 1) + bucket * 864e5).toISOString().slice(0, 10);
+    fetch('https://mohamedibrahiminitiative.goatcounter.com/counter/TOTAL.json?start=' + start)
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(d => {
         // ponytail: hide at zero — "0 visitors" on a live site reads as broken.
