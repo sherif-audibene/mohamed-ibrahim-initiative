@@ -145,20 +145,19 @@
     const el = document.getElementById('visit-counter');
     const count = document.getElementById('visit-count');
     if (!el || !count) return;
-    // ponytail: counterapi has no read-only endpoint, so displaying = incrementing.
-    // It de-dupes by IP, so this is a visitor count, not a view count. Do NOT add
-    // ?unique=true — that returns the caller's own count (always 1), not the total.
-    const url = 'https://counterapi.com/api/mohamedibrahiminitiative/up/visits';
-    const hit = () => fetch(url).then(r => r.json()); // API intermittently returns a non-JSON stub
-    hit()
-      .catch(hit)
+    // ponytail: GoatCounter already counts unique visitors, so its `count` IS the
+    // unique-visitor total (`count_unique` is a deprecated alias). Read-only — the
+    // async count.js tag does the recording, this call never inflates the number.
+    // 403s until "allow using the visitor counter" is on in the site settings.
+    fetch('https://mohamedibrahiminitiative.goatcounter.com/counter/TOTAL.json')
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(d => {
-        if (d && d.formatted) {
-          count.textContent = d.formatted;
+        if (d && d.count) {
+          count.textContent = d.count; // already thousands-separated
           el.hidden = false;
         }
       })
-      .catch(() => {}); // stay hidden if the service is down
+      .catch(() => {}); // stay hidden if stats are unavailable
   }
 
   function initYear() {
