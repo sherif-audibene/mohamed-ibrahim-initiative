@@ -145,9 +145,13 @@
     const el = document.getElementById('visit-counter');
     const count = document.getElementById('visit-count');
     if (!el || !count) return;
-    // ponytail: counterapi is a public, unauthenticated vanity badge — decoration only.
-    fetch('https://counterapi.com/api/mohamedibrahiminitiative/up/visits?unique=true')
-      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    // ponytail: counterapi has no read-only endpoint, so displaying = incrementing.
+    // It de-dupes by IP, so this is a visitor count, not a view count. Do NOT add
+    // ?unique=true — that returns the caller's own count (always 1), not the total.
+    const url = 'https://counterapi.com/api/mohamedibrahiminitiative/up/visits';
+    const hit = () => fetch(url).then(r => r.json()); // API intermittently returns a non-JSON stub
+    hit()
+      .catch(hit)
       .then(d => {
         if (d && d.formatted) {
           count.textContent = d.formatted;

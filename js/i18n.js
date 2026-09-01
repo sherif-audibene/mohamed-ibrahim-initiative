@@ -172,6 +172,6 @@ window.I18N = {
 
     footerSadaqah: "<em>تقبّل الله هذا العمل صدقةً جاريةً عن روحه.</em>",
     footerRights: "مبادرة محمد إبراهيم. جميع الحقوق محفوظة.",
-    footerVisits: "زائر"
+    footerVisits: "زوّار"
   }
 };
