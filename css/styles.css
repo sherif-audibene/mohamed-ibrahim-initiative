@@ -383,6 +383,14 @@ p { margin: 0 0 1em; }
   margin-bottom: 0;
 }
 
+/* ---------- News ---------- */
+.section-news { border-bottom: 1px solid var(--c-border); }
+.news-item { max-width: 860px; }
+.news-item p + p { margin-top: 12px; }
+.news-image { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); margin-bottom: 24px; }
+.news-meta { font-size: 0.9rem; color: var(--c-primary); margin-bottom: 8px; }
+.news-tagline { color: var(--c-primary-dark); }
+
 /* ---------- Scholarship panels ---------- */
 .scholarship-grid {
   display: grid;
